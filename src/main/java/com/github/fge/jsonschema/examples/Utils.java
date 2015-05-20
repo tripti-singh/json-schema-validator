@@ -52,4 +52,10 @@ public final class Utils
     {
         return JsonLoader.fromResource(PKGBASE + name);
     }
+    
+    public static JsonNode loadResource(String pkgName, final String name)
+            throws IOException
+        {
+            return JsonLoader.fromResource(pkgName + name);
+        }
 }
